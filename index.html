@@ -106,7 +106,7 @@ input.error{border-color:#c0392b}
       </span>
       <span class="meta-chip">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg>
-        80 ש״ח לאדם
+        <bdi dir="ltr">£20</bdi> או 80 ש״ח לאדם
       </span>
       <span class="meta-chip">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
@@ -155,13 +155,25 @@ input.error{border-color:#c0392b}
         <div class="form-section-label">מועד ההרצאה</div>
         <div class="event-options">
           <div class="event-option">
-            <input type="radio" name="event" id="ev2" value="19.10 זום – בוקר 11:30 (שעון ישראל)" checked>
+            <input type="radio" name="event" id="ev2" value="19.10 זום – בוקר 09:30 (שעון בריטניה) / 11:30 (שעון ישראל)" checked>
             <label for="ev2">
               <span class="radio-dot"></span>
               <span class="event-date">19.10</span>
               <span class="event-details">
                 <span class="event-type">זום – בוקר</span>
-                <span class="event-time">יום שני · 11:30 שעון ישראל</span>
+                <span class="event-time">יום שני · <bdi dir="ltr">09:30</bdi> שעון בריטניה / <bdi dir="ltr">11:30</bdi> שעון ישראל</span>
+              </span>
+              <span class="event-badge">זום</span>
+            </label>
+          </div>
+          <div class="event-option">
+            <input type="radio" name="event" id="ev3" value="19.10 זום – ערב 20:00 (שעון בריטניה) / 22:00 (שעון ישראל)">
+            <label for="ev3">
+              <span class="radio-dot"></span>
+              <span class="event-date">19.10</span>
+              <span class="event-details">
+                <span class="event-type">זום – ערב</span>
+                <span class="event-time">יום שני · <bdi dir="ltr">20:00</bdi> שעון בריטניה / <bdi dir="ltr">22:00</bdi> שעון ישראל</span>
               </span>
               <span class="event-badge">זום</span>
             </label>
@@ -170,12 +182,12 @@ input.error{border-color:#c0392b}
 
         <div class="payment-notice">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
-          <span>לאחר הרישום תישלח אליך הנחיית תשלום. המקום מאושר לאחר תשלום של <strong>80 ש״ח</strong> בלבד.</span>
+          <span>לאחר הרישום תישלח אליך הנחיית תשלום. המקום מאושר לאחר תשלום של <strong><bdi dir="ltr">£20</bdi> או 80 ש״ח</strong> לאדם.</span>
         </div>
 
         <div class="checkbox-field">
           <input type="checkbox" id="f-confirm" name="confirm">
-          <label for="f-confirm">אני מבין/ה שהמקום מאושר לאחר <strong>תשלום של 80 ש״ח</strong> ומסכים/ה לתנאים</label>
+          <label for="f-confirm">אני מבין/ה שהמקום מאושר לאחר <strong>תשלום של <bdi dir="ltr">£20</bdi> או 80 ש״ח לאדם</strong> ומסכים/ה לתנאים</label>
         </div>
 
         <button type="submit" class="submit-btn" id="submit-btn">
